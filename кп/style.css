@@ -1,0 +1,226 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    
+    background-size: cover;
+    letter-spacing: 4%;
+    font-weight: 300;
+
+}
+
+video {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -2;
+}
+
+.video-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7); 
+    z-index: -1;
+}
+
+a{
+    font-size: 24px;
+    color: #D9D3C7;
+    text-decoration: none;
+    font-family: Alice;
+}
+
+.nav {
+    margin-top: 3%;
+    justify-content: space-evenly;
+    display: flex;
+}
+
+.glav-text{
+    font-size: 56px;
+    color: #D9D3C7;
+    justify-content: space-evenly;
+    display: flex;
+    text-align: center;
+    font-family: 'Alice';
+    margin-top: 10%;
+    margin-bottom: 10%;
+}
+
+h2 {
+    font-size: 36px;
+    color:#D9D3C7;
+    font-family: 'Alice';
+    margin-left: 9%;
+
+}
+
+/* КАРТОЧКИ */
+.cards-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    max-width: 1700px;
+    margin: 0 auto;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+.card-link {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+    width: 320px;
+    transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    position: relative;
+    margin-left: -70px;
+}
+
+.card-link:first-child {
+    margin-left: 0;
+}
+
+.card-link:nth-child(1) {
+    z-index: 1;
+    width: 220px;
+}
+.card-link:nth-child(2) {
+    z-index: 2;
+    width: 270px;
+}
+.card-link:nth-child(3) {
+    z-index: 5;  
+}
+.card-link:nth-child(4) {
+    z-index: 3;
+    width: 270px;
+}
+.card-link:nth-child(5) {
+    z-index: 1;
+    width: 220px;
+}
+
+.card {
+    position: relative;
+    border-radius: 20px;
+    overflow: hidden;
+    transition: all 0.4s ease;
+    width: 100%;
+}
+
+.card-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.card-content {
+    position: absolute;  
+    bottom: 0;          
+    left: 0;             
+    right: 0;           
+    padding: 20px;
+}
+
+.card-title {
+    font-size: 1.15rem;
+    font-weight: 700;
+    margin-bottom: 8px;
+    color: #BCBEC0;
+    line-height: 1.3;
+}
+
+.card-description {
+    font-size: 0.8rem;
+    color: #BCBEC0;
+    line-height: 1.4;
+}
+
+.card-link:hover {
+    transform: scale(1.1);
+    z-index: 10 !important;
+}
+
+/* ФОРМА ВПЕЧАТЛЕНИЙ */
+
+.form-card {
+    background: #252525;
+    border-radius: 32px;
+    padding: 40px;
+    max-width: 60%;
+    margin-left: 250px;
+    margin-top: 2%;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.form-group {
+    /* margin-bottom: 20px; */
+}
+
+input {
+    width: 380%;
+    margin-bottom: 4%;
+    padding-top: 4%;
+    border: none;
+    border-bottom: 2px solid #D9D9D9;
+    font-size: 20px;
+    font-family: Alice;
+    resize: vertical;
+    background-color: #252525;
+    outline: none;
+    color:#D9D9D9;
+}
+
+
+/* Кнопка */
+.submit-btn {
+    display;
+    margin-bottom: 4%;
+    padding-top: 4%;
+    border: 2px solid #D9D9D9;
+    font-size: 20px;
+    font-family: Alice;
+    resize: vertical;
+    background-color: #252525;
+    outline: none;
+    color:#D9D9D9;
+}
+
+.submit-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 20px rgba(102, 126, 234, 0.3);
+}
+
+.submit-btn:active {
+            
+}
+
+/* Сообщение об успехе/ошибке */
+.message {
+    margin-top: 20px;
+    padding: 12px;
+    border-radius: 12px;
+    text-align: center;
+    display: none;
+}
+
+.message.success {
+    background: #000;
+    color: #155724;
+    border: 1px solid #c3e6cb;
+}
+
+.message.error {
+    background: #000;
+    color: #721c24;
+    border: 1px solid #f5c6cb;
+}
