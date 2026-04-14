@@ -23,15 +23,16 @@
         <h1>ГОРОДСКИЕ ЛЕГЕНДЫ<br>САНКТ-ПЕТЕРБУРГА</h1>
     </div>
 
-    <div class="zag">
-        <h2>КАКУЮ ЛЕГЕНДУ УЗНАЕМ СЕГОДНЯ?</h2>
-    </div>
-
+    <section id="stories" class="stories-section">
+        <div class="zag">
+            <h2>КАКУЮ ЛЕГЕНДУ УЗНАЕМ СЕГОДНЯ?</h2>
+        </div>
+    </section>
 
     <div class="cards-container">
 
         <!-- КАРТОЧКА 1 -->
-        <a href="" class="card-link">
+        <a href="zamok.html" class="card-link">
             <div class="card">
                 <img src="zamok.png" class="card-image">
                 <div class="card-content">
@@ -42,7 +43,7 @@
         </a>
 
         <!-- КАРТОЧКА 2 -->
-        <a href="" class="card-link">
+        <a href="rotonda.html" class="card-link">
             <div class="card">
                 <img src="rotonda.png" class="card-image">
                 <div class="card-content">
@@ -53,7 +54,7 @@
         </a>
 
         <!-- КАРТОЧКА 3 -->
-        <a href="" class="card-link">
+        <a href="osobnyak.html" class="card-link">
             <div class="card">
                 <img src="osobnyak.png" class="card-image">
                 <div class="card-content">
@@ -64,7 +65,7 @@
         </a>
 
         <!-- КАРТОЧКА 4 -->
-        <a href="" class="card-link">
+        <a href="anna.html" class="card-link">
             <div class="card">
                 <img src="anna.png" class="card-image">
                 <div class="card-content">
@@ -75,7 +76,7 @@
         </a>
 
         <!-- КАРТОЧКА 5 -->
-        <a href="" class="card-link">
+        <a href="kanal.html" class="card-link">
             <div class="card">
                 <img src="kanal.png" class="card-image">
                 <div class="card-content">
@@ -86,9 +87,11 @@
         </a>
     </div>
 
-    <div class="zag">
-        <h2>ПОДЕЛИТЕСЬ СВОИМИ ВПЕЧАТЛЕНИЯМИ</h2>
-    </div>
+    <section id="impressions" class="impressions-section">
+        <div class="zag">
+            <h2>ПОДЕЛИТЕСЬ СВОИМИ ВПЕЧАТЛЕНИЯМИ</h2>
+        </div>
+    </section>
 
     <div class="form-card">
         <form action="https://formsubmit.co/garkushinavaleria@gmail.com" method="POST">
@@ -100,11 +103,85 @@
                 <input name="message" required placeholder="Ваш отзыв*"></input>
             </div>
 
-            <button type="submit" class="submit-btn">Поделиться</button>
+            <button type="submit" class="submit-btn1">Поделиться</button>
         </form>
 
         <div id="formMessage" class="message"></div>
     </div>
 
+    <section id="legends" class="form-legend-section">
+        <div class="zag">
+            <h2>ДОБАВЬ СВОЮ ЛЕГЕНДУ</h2>
+        </div>
+    </section>
+
+    <div class="instruction">
+        <div class="inst-ob">
+            <img src="i1.png" class="instr-img">
+            <p class="p-l">Заполните информацию о своей легенде</p>
+        </div>
+        <div class="inst-ob">
+            <img src="i2.png" class="instr-img">
+            <p class="p-l">Нажмите кнопку “Отправить”</p>
+        </div>
+        <div class="inst-ob">
+            <img src="i3.png" class="instr-img">
+            <p class="p-l">Ваша история будет добавлена на сайт</p>
+        </div>
+    </div>
+
+    <div class="form-legend">
+    <!-- Прогресс-бар -->
+    <div class="progress-bar">
+        <div class="progress-fill"></div>
+    </div>
+
+    <h2 class="form-title">ИНФОРМАЦИЯ</h2>
+
+    <form action="https://formsubmit.co/garkushinavaleria@gmail.com" method="POST">
+        <div class="form-gr">
+            <input type="text" name="name" placeholder="Имя">
+        </div>
+
+        <div class="form-gr">
+            <input type="text" name="city" required placeholder="Город*">
+        </div>
+
+        <div class="form-gr">
+            <input name="story" required placeholder="История*"></input>
+        </div>
+
+        <div class="form-gr">
+            <input type="email" name="email" required placeholder="e-mail*">
+        </div>
+
+        <div class="file-wrapper">
+            <input type="file" id="photoInput" name="photo" accept="image/*" required>
+            <span class="file-name" id="fileName">Выберите файл</span>
+            <label for="photoInput" class="file-label">
+                 <img src="zagruzka.png">
+            </label>
+        </div>
+        <button type="submit" class="submit-btn2">Отправить</button>
+    </form>
+
+    <div id="formMessage" class="message"></div>
+</div>
+
+<footer class="footer">
+    <div class="footer-content">
+        <div class="footer-links">
+            <a href="#legends" class="footer-link">Поделиться легендой</a>
+            <a href="#impressions" class="footer-link">Ваши впечатления</a>
+            <a href="#stories" class="footer-link">Легенды</a>
+        </div>
+        <div class="footer-info">
+            <p>ООО «Портал в Петербург»</p>
+            <p>portalCPB@gmail.com</p>
+        </div>
+    </div>
+</footer>
+
+<script src="prog-bar.js"></script>
 </body>
 </html>
