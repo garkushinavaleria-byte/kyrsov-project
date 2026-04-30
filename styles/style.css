@@ -1,0 +1,420 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-size: cover;
+    letter-spacing: 4%;
+    font-weight: 300;
+}
+
+video {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -2;
+}
+
+.video-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7); 
+    z-index: -1;
+}
+
+a{
+    font-size: 24px;
+    color: #D9D3C7;
+    text-decoration: none;
+    font-family: Alice;
+}
+
+.nav {
+    margin-top: 3%;
+    justify-content: space-evenly;
+    display: flex;
+}
+
+.glav-text{
+    font-size: 56px;
+    color: #D9D3C7;
+    justify-content: space-evenly;
+    display: flex;
+    text-align: center;
+    font-family: 'Alice';
+    margin-top: 10%;
+    margin-bottom: 10%;
+}
+
+h2 {
+    font-size: 36px;
+    color:#D9D3C7;
+    font-family: 'Alice';
+    margin-left: 9%;
+}
+
+.zag {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: all 0.8s cubic-bezier(0.2, 0.9, 0.4, 1.1);
+}
+
+.zag.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* КАРТОЧКИ */
+.cards-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    max-width: 1700px;
+    margin: 0 auto;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+.card-link {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+    width: 320px;
+    transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    position: relative;
+    margin-left: -70px;
+}
+
+.card-link:first-child {
+    margin-left: 0;
+}
+
+.card-link:nth-child(1) {
+    z-index: 1;
+    width: 220px;
+}
+.card-link:nth-child(2) {
+    z-index: 2;
+    width: 270px;
+}
+.card-link:nth-child(3) {
+    z-index: 5;  
+}
+.card-link:nth-child(4) {
+    z-index: 3;
+    width: 270px;
+}
+.card-link:nth-child(5) {
+    z-index: 1;
+    width: 220px;
+}
+
+.card {
+    position: relative;
+    border-radius: 20px;
+    overflow: hidden;
+    transition: all 0.4s ease;
+    width: 100%;
+}
+
+.card-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.card-content {
+    position: absolute;  
+    bottom: 0;          
+    left: 0;             
+    right: 0;           
+    padding: 20px;
+}
+
+.card-title {
+    font-size: 1.15rem;
+    font-weight: 700;
+    margin-bottom: 8px;
+    color: #BCBEC0;
+    line-height: 1.3;
+}
+
+.card-description {
+    font-size: 0.8rem;
+    color: #BCBEC0;
+    line-height: 1.4;
+}
+
+.card-link:hover {
+    transform: scale(1.1);
+    z-index: 10 !important;
+}
+
+
+/* ФОРМА ВПЕЧАТЛЕНИЙ */
+
+.form-card {
+    background: #252525;
+    border-radius: 32px;
+    padding: 40px;
+    max-width: 60%;
+    margin-left: 250px;
+    margin-top: 2%;
+    justify-content: flex;
+    position: relative;
+    margin-bottom: 5%;
+}
+
+.form-group {
+    max-width: 100%;
+    border-bottom: 1px solid #D9D9D9;
+}
+
+input {
+    width: 380%;
+    padding-top: 4%;
+    border: none;
+    font-size: 20px;
+    font-family: Alice;
+    resize: vertical;
+    background-color: #252525;
+    outline: none;
+    color:#D9D9D9;
+}
+
+
+.submit-btn1 {
+    position: relative;
+    margin-top: 4%;
+    padding: 12px 30px;
+    border: 2px solid #D9D9D9;
+    border-radius: 15px;
+    font-size: 20px;
+    font-family: Alice;
+    resize: vertical;
+    background-color: #252525;
+    outline: none;
+    color:#BCBEC0;
+    left: 740px;
+    top: 8px;
+}
+
+.submit-btn1:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 20px rgba(255, 255, 255, 0.3);
+}
+
+
+/* ИНСТРУКЦИЯ */
+
+.instruction {
+    display: flex;
+    max-width: 1200px;
+    margin: auto;
+    padding: 40px 20px;
+}
+
+.instr-img {
+    width: 80px;
+    object-fit: contain;
+}
+
+.p-l {
+    font-size: 20px;
+    font-family: 'Alice', sans-serif;
+    color: #D9D3C7;
+    line-height: 1.4;
+    margin: 0;
+    max-width: 200px;
+    text-align: left;
+}
+
+.inst-ob {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 20px;
+    margin: auto;
+    padding: 40px 20px;
+}
+
+
+/* ФОРМА ЛЕГЕНДЫ */
+.form-legend {
+    background: #252525;
+    border-radius: 32px;
+    padding: 40px;
+    max-width: 60%;
+    margin-left: 250px;
+    margin-top: 2%;
+    margin-bottom: 5%;
+    position: relative;
+}
+
+.progress-bar {
+    width: 100%;
+    height: 6px;
+    background: #3a3a3a;
+    border-radius: 3px;
+    margin-bottom: 30px;
+    overflow: hidden;
+}
+
+.progress-fill {
+    width: 0%;
+    height: 100%;
+    background: #D9D3C7;
+    border-radius: 3px;
+    transition: width 0.3s ease;
+}
+
+.form-title {
+    font-size: 28px;
+    font-family: 'Alice';
+    color: #D9D3C7;
+    margin-bottom: 70px;
+    text-align: left;
+    margin: 0;
+}
+
+
+input {
+    width: 100%;
+    padding: 30px 0 0 0;
+    border: none;
+    border-bottom: 2px solid #D9D9D9;
+    font-size: 20px;
+    font-family: Alice;
+    background-color: #252525;
+    outline: none;
+    resize: vertical;
+}
+
+
+.file-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 20px;
+    padding: 10px 0;
+    margin-right: 15px;
+}
+
+
+.file-label {
+    width: 8px;
+    cursor: pointer;
+    background-color: #252525;
+    border: none;
+    transition: transform 0.2s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+input[type="file"] {
+    display: none;
+}
+
+
+.file-name {
+    font-size: 20px;
+    font-family: 'Alice';
+    font-weight: 550;
+    color: #6e6e6e;
+    background-color: #252525;
+    border: none;
+    outline: none;
+    flex: 1;
+    border-bottom: 2px solid #D9D9D9;
+    margin-top: 25px;
+}
+
+.submit-btn2 {
+    position: relative;
+    padding: 10px 30px;
+    border: 2px solid #D9D9D9;
+    border-radius: 15px;
+    font-size: 20px;
+    font-family: Alice;
+    resize: vertical;
+    background-color: #252525;
+    outline: none;
+    color:#BCBEC0;
+    left: 750px;
+    top: 8px;
+}
+
+.submit-btn2:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 20px rgba(255, 255, 255, 0.3);
+}
+
+
+/* ПОДВАЛ */
+.footer {
+    padding: 40px 5%;
+    border-top: 1px solid #252525;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;  
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.footer-links {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    justify-content: flex-start; 
+}
+
+.footer-link {
+    font-size: 20px;
+    font-family: 'Alice', sans-serif;
+    color: #D9D3C7;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    line-height: 1.4;
+}
+
+.footer-link:hover {
+    transform: translateX(50px);
+}
+
+.footer-info {
+    text-align: right;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;  
+    gap: 12px;  
+}
+
+.footer-info p {
+    font-size: 20px;
+    font-family: 'Alice', sans-serif;
+    color: #D9D3C7;
+    line-height: 1.4;
+    margin: 0;
+}
+
+
+
+
+
+
+

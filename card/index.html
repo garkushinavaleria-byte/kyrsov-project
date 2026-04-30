@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Портал в Петербург</title>
+    <link href="https://fonts.googleapis.com/css2?family=Alice&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/styles/style.css">
+    <link rel="stylesheet" href="/styles/mod-win.css">
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
+
+<body>
+    <header>
+        <div class="nav">
+            <a href="#impressions">ваши впечатления</a>
+            <a href="#stories">легенды</a>
+            <a href="#legends">поделиться легендой</a>
+        </div>
+    </header>
+
+    <video src="/FON/video.mp4" autoplay loop muted playsinline></video>
+    <div class="video-overlay"></div>
+
+    <div class="glav-text">
+        <h1>ГОРОДСКИЕ ЛЕГЕНДЫ<br>САНКТ-ПЕТЕРБУРГА</h1>
+    </div>
+
+    <section id="stories" class="stories-section">
+        <div class="zag">
+            <h2>КАКУЮ ЛЕГЕНДУ УЗНАЕМ СЕГОДНЯ?</h2>
+        </div>
+    </section>
+
+    <div class="cards-container">
+
+        <!-- КАРТОЧКА 1 -->
+        <a href="/card/zamok.html" class="card-link">
+            <div class="card">
+                <img src="/FOTO/zamok.png" class="card-image">
+                <div class="card-content">
+                    <div class="card-title">Михайловский замок: Дом с привидениями</div>
+                    <div class="card-description">Локация: Михайловский замок (Русский музей)</div>
+                </div>
+            </div>
+        </a>
+
+        <!-- КАРТОЧКА 2 -->
+        <a href="/card/rotonda.html" class="card-link">
+            <div class="card">
+                <img src="/FOTO/rotonda.png" class="card-image">
+                <div class="card-content">
+                    <div class="card-title">Ротонда на Гороховой: Портал между мирами</div>
+                    <div class="card-description">Локация: Пересечение Гороховой улицы и набережной Фонтанки</div>
+                </div>
+            </div>
+        </a>
+
+        <!-- КАРТОЧКА 3 -->
+        <a href="/card/osobnyak.html" class="card-link">
+            <div class="card">
+                <img src="/FOTO/osobnyak.png" class="card-image">
+                <div class="card-content">
+                    <div class="card-title">Зеркало Дракулы в особняке Брусницыных</div>
+                    <div class="card-description">Локация: Васильевский остров, Кожевенная линия</div>
+                </div>
+            </div>
+        </a>
+
+        <!-- КАРТОЧКА 4 -->
+        <a href="/card/anna.html" class="card-link">
+            <div class="card">
+                <img src="/FOTO/anna.png" class="card-image">
+                <div class="card-content">
+                    <div class="card-title">Призрак Анны Иоанновны в Летнем саду</div>
+                    <div class="card-description">Локация: Летний сад, Летняя решетка</div>
+                </div>
+            </div>
+        </a>
+
+        <!-- КАРТОЧКА 5 -->
+        <a href="/card/kanal.html" class="card-link">
+            <div class="card">
+                <img src="/FOTO/kanal.png" class="card-image">
+                <div class="card-content">
+                    <div class="card-title">Проклятие Обводного канала</div>
+                    <div class="card-description">Возле Обводного канала</div>
+                </div>
+            </div>
+        </a>
+    </div>
+
+    <section id="impressions" class="impressions-section">
+        <div class="zag">
+            <h2>ПОДЕЛИТЕСЬ СВОИМИ ВПЕЧАТЛЕНИЯМИ</h2>
+        </div>
+    </section>
+
+    <div class="form-card">
+        <form action="https://formsubmit.co/garkushinavaleria@gmail.com" method="POST">
+            <div class="form-group">
+                <input type="text" name="name" required placeholder="Имя*">
+            </div>
+
+            <div class="form-group">
+                <input name="message" required placeholder="Ваш отзыв*"></input>
+            </div>
+
+            <button type="submit" class="submit-btn1">Поделиться</button>
+        </form>
+
+        <div id="formMessage" class="message"></div>
+    </div>
+
+    <section id="legends" class="form-legend-section">
+        <div class="zag">
+            <h2>ДОБАВЬ СВОЮ ЛЕГЕНДУ</h2>
+        </div>
+    </section>
+
+    <div class="instruction">
+        <div class="inst-ob">
+            <img src="/FOTO/i1.png" class="instr-img">
+            <p class="p-l">Заполните информацию о своей легенде</p>
+        </div>
+        <div class="inst-ob">
+            <img src="/FOTO/i2.png" class="instr-img">
+            <p class="p-l">Нажмите кнопку “Отправить”</p>
+        </div>
+        <div class="inst-ob">
+            <img src="/FOTO/i3.png" class="instr-img">
+            <p class="p-l">Ваша история будет добавлена на сайт</p>
+        </div>
+    </div>
+
+    <div class="form-legend">
+    <!-- Прогресс-бар -->
+    <div class="progress-bar">
+        <div class="progress-fill"></div>
+    </div>
+
+    <h2 class="form-title">ИНФОРМАЦИЯ</h2>
+
+    <form action="https://formsubmit.co/garkushinavaleria@gmail.com" method="POST">
+        <div class="form-gr">
+            <input type="text" name="name" placeholder="Имя">
+        </div>
+
+        <div class="form-gr">
+            <input type="text" name="city" required placeholder="Город*">
+        </div>
+
+        <div class="form-gr">
+            <input name="story" required placeholder="История*"></input>
+        </div>
+
+        <div class="form-gr">
+            <input type="email" name="email" required placeholder="e-mail*">
+        </div>
+
+        <div class="file-wrapper">
+            <input type="file" id="photoInput" name="photo" accept="image/*" required>
+            <span class="file-name" id="fileName">Выберите файл</span>
+            <label for="photoInput" class="file-label">
+                 <img src="/FOTO/zagruzka.png">
+            </label>
+        </div>
+        <button type="submit" class="submit-btn2">Отправить</button>
+    </form>
+
+    <div id="formMessage" class="message"></div>
+</div>
+
+<footer class="footer">
+    <div class="footer-content">
+        <div class="footer-links">
+            <a href="#legends" class="footer-link">Поделиться легендой</a>
+            <a href="#impressions" class="footer-link">Ваши впечатления</a>
+            <a href="#stories" class="footer-link">Легенды</a>
+        </div>
+        <div class="footer-info">
+            <p>ООО «Портал в Петербург»</p>
+            <p>portalCPB@gmail.com</p>
+        </div>
+    </div>
+</footer>
+
+<div id="modalFixed" class="modal-fixed">
+    <div class="modal-content">
+        <button class="modal-fixed-close">&times;</button>
+        <div class="modal-text">
+            <h3>Добро пожаловать в мир городских легенд</h3>
+            <p class="modal-fixed-text">Приятных вам путешествий по мистическому Петербургу</p>
+        </div>
+    </div>
+</div>
+
+<script src="/prog-bar.js"></script>
+<script src="/mod-win.js"></script>
+<script src="/load.js"></script>
+</body>
+</html>
